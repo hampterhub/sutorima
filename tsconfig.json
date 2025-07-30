@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compileOnSave": false,
+  "files": [],
+  "references": [
+    {
+      "path": "./libs/schema"
+    },
+    {
+      "path": "./apps/sutorima-e2e"
+    },
+    {
+      "path": "./apps/sutorima"
+    }
+  ]
+}

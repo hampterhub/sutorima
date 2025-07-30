@@ -1,0 +1,11 @@
+{
+  "name": "@sutorima/sutorima",
+  "version": "0.0.1",
+  "private": true,
+  "devDependencies": {
+    "@sutorima/schema": "workspace:*"
+  },
+  "dependencies": {
+    "zustand": "^5.0.6"
+  }
+}
