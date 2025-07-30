@@ -17,5 +17,21 @@
   },
   "dependencies": {
     "zod": "^4.0.14"
+  },
+  "nx": {
+    "targets": {
+      "build": {
+        "continuous": true
+      },
+      "dev": {
+        "executor": "nx:run-commands",
+        "continuous": true,
+        "outputs": ["{projectRoot}/dist"],
+        "options": {
+          "watch": true,
+          "command": "nx run @sutorima/schema:build"
+        }
+      }
+    }
   }
 }

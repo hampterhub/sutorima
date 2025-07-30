@@ -7,5 +7,13 @@
   },
   "dependencies": {
     "zustand": "^5.0.6"
+  },
+  "nx": {
+    "targets": {
+      "dev": {
+        "continuous": true,
+        "dependsOn": ["@sutorima/schema:dev"]
+      }
+    }
   }
 }

@@ -1,17 +1,17 @@
 import {
-  V1GetStateOutputSchema,
-  V1PostActivityInputSchema,
-  V1PostActivityOutputSchema,
+  V1GetStateOutput,
+  V1PostActivityInput,
+  V1PostActivityOutput,
 } from '@sutorima/schema';
 
 export type SutorimaService = {
-  getState: () => Promise<V1GetStateOutputSchema>
-  postActivity: (input: V1PostActivityInputSchema) => Promise<V1PostActivityOutputSchema>
+  getState: () => Promise<V1GetStateOutput>
+  postActivity: (input: V1PostActivityInput) => Promise<V1PostActivityOutput>
 }
 // TODO update store on these service methods
 export const sutorimaService: SutorimaService = {
-  async getState(): Promise<V1GetStateOutputSchema> {
-    const object: V1GetStateOutputSchema = {
+  async getState(): Promise<V1GetStateOutput> {
+    const object: V1GetStateOutput = {
       activities: [
         {
           type: '',
@@ -32,8 +32,8 @@ export const sutorimaService: SutorimaService = {
     };
     return object;
   },
-  async postActivity(input): Promise<V1PostActivityOutputSchema> {
-    const object: V1PostActivityOutputSchema = {
+  async postActivity(input): Promise<V1PostActivityOutput> {
+    const object: V1PostActivityOutput = {
       activities: [
         {
           type: '',

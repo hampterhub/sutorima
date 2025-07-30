@@ -41,7 +41,7 @@ export type V1PostActivityOutput = z.infer<typeof v1PostActivityOutputSchema>;
 
 export const v1GetStateInputSchema = z.object({
 });
-export type V1PGetStateInput = z.infer<typeof v1GetStateInputSchema>;
+export type V1GetStateInput = z.infer<typeof v1GetStateInputSchema>;
 
 export const v1GetStateOutputSchema = gameStateSchema.extend({
 });
